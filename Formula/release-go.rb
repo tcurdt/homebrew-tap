@@ -6,21 +6,21 @@ class ReleaseGo < Formula
   desc "The description of the project
 "
   homepage "https://github.com/tcurdt/release-go"
-  version "1.0.2"
+  version "1.0.3"
   license "Apache"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tcurdt/release-go/releases/download/v1.0.2/release-go_1.0.2_darwin_arm64.zip"
-      sha256 "ca8a6edc8c95c1e2990ac32e0bd5b3f69a4d585018512db8762c47fdb30e74d8"
+      url "https://github.com/tcurdt/release-go/releases/download/v1.0.3/release-go_1.0.3_darwin_arm64.zip"
+      sha256 "ab5986006ce194e1c37a87b16727fd4c8420e848c04985b6947aaf573d087d29"
 
       def install
         bin.install "release-go"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tcurdt/release-go/releases/download/v1.0.2/release-go_1.0.2_darwin_amd64.zip"
-      sha256 "aa815ab8e7914154f7e5d8c884f29069c8110632d8be04c5edcab254e0d5a1c1"
+      url "https://github.com/tcurdt/release-go/releases/download/v1.0.3/release-go_1.0.3_darwin_amd64.zip"
+      sha256 "f1fcb89d4b081184006f1ebc20d74a83c22f4b791ac04d8df444c10a44527b6a"
 
       def install
         bin.install "release-go"
@@ -30,16 +30,16 @@ class ReleaseGo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcurdt/release-go/releases/download/v1.0.2/release-go_1.0.2_linux_arm64.zip"
-      sha256 "ada861e00c3a178cf9be2f268128b4ba00a90b5c9576e11b23ce86cf6dc4d9f1"
+      url "https://github.com/tcurdt/release-go/releases/download/v1.0.3/release-go_1.0.3_linux_arm64.zip"
+      sha256 "90a15090cc5f8853426af06d99fa662e92dce9aa4aed858af933b6d60c0762a8"
 
       def install
         bin.install "release-go"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tcurdt/release-go/releases/download/v1.0.2/release-go_1.0.2_linux_amd64.zip"
-      sha256 "ea126c778d13e7475598165219771df04dd2dba6b1dbbc98bd82d802116e66d7"
+      url "https://github.com/tcurdt/release-go/releases/download/v1.0.3/release-go_1.0.3_linux_amd64.zip"
+      sha256 "f2bb95ca7c95e7d1d96b0dd53822f2c7cc986f2706343ddb8538c54dc97aaf61"
 
       def install
         bin.install "release-go"
