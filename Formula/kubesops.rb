@@ -5,21 +5,21 @@
 class Kubesops < Formula
   desc "Manage Kubernetes secrets as encrypted dotenv files"
   homepage "https://github.com/tcurdt/kubesops"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.1/kubesops_Darwin_x86_64.tar.gz"
-      sha256 "1a60b4e7e931d7227542ad416163860f6081cfef0c2b81282a667e1cb290291a"
+      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.2/kubesops_Darwin_x86_64.tar.gz"
+      sha256 "c57e42af32def9b7879860ec1f8336cd08b94d4448285df27a0f8cabeff9f7f6"
 
       def install
         bin.install "kubesops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.1/kubesops_Darwin_arm64.tar.gz"
-      sha256 "fd334a53429698eda1374a1aa10e46cdec19b7050ec90acc8861a6ceac27fe2c"
+      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.2/kubesops_Darwin_arm64.tar.gz"
+      sha256 "7ceeb3c8024e1aafd08a5c774fbf999474d82f731cc61460138d7d80cb513fe0"
 
       def install
         bin.install "kubesops"
@@ -29,15 +29,15 @@ class Kubesops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.1/kubesops_Linux_x86_64.tar.gz"
-      sha256 "3aa9bab4abb07637dd18a2be8c7001ba77a3753e82cfb6aad66a082fd755586f"
+      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.2/kubesops_Linux_x86_64.tar.gz"
+      sha256 "c609817c5c4d17eaa66975dc265288a80febb01e8fdfa03c91b1da64a2b39f6d"
       def install
         bin.install "kubesops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.1/kubesops_Linux_arm64.tar.gz"
-      sha256 "f503e1f802ecea953f59036a06423b6fb0a2891c3b193f5c6abc3f09aacadf02"
+      url "https://github.com/tcurdt/kubesops/releases/download/v0.0.2/kubesops_Linux_arm64.tar.gz"
+      sha256 "d80451166eb1fa77d8af8a5b67226ad3fed747921f5d24e470d476a511492c82"
       def install
         bin.install "kubesops"
       end
