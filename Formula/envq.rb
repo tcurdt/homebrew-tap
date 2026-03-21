@@ -5,15 +5,15 @@
 class Envq < Formula
   desc "Jq/yq-like tool for .env files"
   homepage "https://github.com/tcurdt/envq"
-  url "https://github.com/tcurdt/envq/archive/refs/tags/v0.0.9.tar.gz"
-  version "0.0.9"
-  sha256 "e2fcd11e37923ecd984680af3a80ab78dabf2ad45e4a3df30c348b577493ffd2"
+  url "https://github.com/tcurdt/envq/archive/refs/tags/v0.1.0.tar.gz"
+  version "0.1.0"
+  sha256 "f9b9e265b6458409c3dde6d6f197e8444bfe1937a953ceac216cda309535812d"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/tcurdt/envq/releases/download/v0.0.9/envq-0.0.9-darwin-arm64.tar.gz"
-      sha256 "a7220bd0072be21d96b2b53ac0a9eecc543f94e5afe08cd65b4a2cca1dbdb503"
+      url "https://github.com/tcurdt/envq/releases/download/v0.1.0/envq-0.1.0-darwin-arm64.tar.gz"
+      sha256 "6a8b2c0ccf46266f1c6260676469285fce4189aacb590323475f0625f2cb9bc3"
     end
   end
 
