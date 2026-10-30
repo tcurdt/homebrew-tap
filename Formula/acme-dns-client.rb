@@ -5,22 +5,22 @@
 class AcmeDnsClient < Formula
   desc "Retrieve acme certs via direct dns challenge"
   homepage "https://github.com/tcurdt/acme-dns-client"
-  url "https://github.com/tcurdt/acme-dns-client/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "77762eae4af7d80fe26dffa92508c3dad0448e05d6bfaa323fd87cd8e079dcdd"
+  url "https://github.com/tcurdt/acme-dns-client/archive/refs/tags/v0.3.0.tar.gz"
+  version "0.3.0"
+  sha256 "2555e13281765accb0c1c3d8d4993a9d3d76e71ac85f158073244b8ac6be2692"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/tcurdt/acme-dns-client/releases/download/v0.2.0/acme-dns-client-0.2.0-darwin-arm64.tar.gz"
-      sha256 "3655a715f9da3f41e038e81ec333b44bfd7326aaac8b590df11284845abdbbd4"
+      url "https://github.com/tcurdt/acme-dns-client/releases/download/v0.3.0/acme-dns-client-0.3.0-darwin-arm64.tar.gz"
+      sha256 "8c572035b3881f5ed2333739c056f6f2147ffee23447612da8472315c08d022a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/tcurdt/acme-dns-client/releases/download/v0.2.0/acme-dns-client-0.2.0-linux-amd64.tar.gz"
-      sha256 "18c7851111ab408692bbc5877dda337b6f1e31034f18833880844ddfe2a16556"
+      url "https://github.com/tcurdt/acme-dns-client/releases/download/v0.3.0/acme-dns-client-0.3.0-linux-amd64.tar.gz"
+      sha256 "e820d94e2994212f56352150af234efdbe21cb117eb46a960bd35029526c3de7"
     end
   end
 
